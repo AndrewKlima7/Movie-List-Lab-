@@ -47,7 +47,7 @@ namespace Movie_List_lab_Andrew_Klima
                         string movGenre = mov.genre.ToString();
                         Console.WriteLine($"{i} : {movGenre}");
                     }
-                    Console.WriteLine("What genre are you interested in?");
+                    Console.WriteLine("What genre are you interested in? (word or number)"); //adjustment to be more clear to the user
                     string input = Console.ReadLine();
                     if (input.Length == 0)
                     {
@@ -85,7 +85,7 @@ namespace Movie_List_lab_Andrew_Klima
         }
         public static bool GoAgain()
         {
-            Console.Write("Continue? (Y/N) ");
+            Console.Write("Continue? (Y/N)");
             string input = Console.ReadLine();
 
             if (input.ToUpper() == "Y" || input.ToUpper() == "YES")
